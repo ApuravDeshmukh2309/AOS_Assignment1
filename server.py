@@ -62,52 +62,7 @@ class SoldierService(soldier_pb2_grpc.SoldierServiceServicer):
         return soldier_pb2.SoldierList(soldiers=self.soldiers)
 
 
-    def IssueCommand(self, request, context):
-        result = "Command received: " + request.command
-        return soldier_pb2.CommandResponse(result=result)
-
-    # def LaunchMissile(self, request, context):
-    #     if self.battle_duration >= self.T:
-    #         return soldier_pb2.CommandResponse(result="Battle duration exceeded. No more missiles can be launched.")
-        
-    #     missile = soldier_pb2.Missile(
-    #         id=self.missile_id_counter,
-    #         target_x=request.target_x,
-    #         target_y=request.target_y,
-    #         category=request.category,
-    #     )
-    #     self.missiles.append(missile)
-    #     self.most_recent_missile = missile
-    #     self.missile_id_counter += 1
-
-    #     affected_soldiers = []
-    #     is_commander_affected = False
-
-    #     for soldier in self.soldiers:
-    #         if soldier.alive and abs(soldier.x - missile.target_x) <= missile_radius and \
-    #            abs(soldier.y - missile.target_y) <= missile_radius:
-    #             affected_soldiers.append(soldier.id)
-    #             if soldier.is_commander:
-    #                 is_commander_affected = True
-
-    #     for soldier_id in affected_soldiers:
-    #         yield soldier_pb2.MissileStrike(
-    #             missile_id=missile.id,
-    #             affected_soldier_id=soldier_id,
-    #             is_commander_affected=is_commander_affected,
-    #         )
-
-    #     self.battle_duration += self.t
-    #     time.sleep(self.t)
-        
-    #     self.print_battlefield_status()
-        
-    #     for soldier in self.soldiers:
-    #         if soldier.id in affected_soldiers:
-    #             soldier.alive = False
-    #     self.soldiers = [soldier for soldier in self.soldiers if soldier.alive]
-
-    # ...
+    
     def LaunchMissile(self, request, context):
         self.commDead = False
         if self.battle_duration >= self.T:
@@ -128,12 +83,7 @@ class SoldierService(soldier_pb2_grpc.SoldierServiceServicer):
 
         #print("2")
         missile_impacted_coordinates = []
-        # for x in range(max(0, missile.target_x - missile_radius-1), 
-        #             min(self.field_size, missile.target_x + missile_radius)):
-        #     for y in range(max(0, missile.target_y - missile_radius-1), 
-        #                 min(self.field_size, missile.target_y + missile_radius)):
-        #         if (x, y) not in missile_impacted_coordinates:
-        #             missile_impacted_coordinates.append((x, y))
+       
         missile_radius = random.randint(1, 4)
         for x in range(missile.target_x - missile_radius + 1, missile.target_x + missile_radius):
             for y in range(missile.target_y - missile_radius + 1, missile.target_y + missile_radius):
@@ -195,10 +145,7 @@ class SoldierService(soldier_pb2_grpc.SoldierServiceServicer):
             else:
                 self.field[soldier.x][soldier.y] = f'C{soldier.id}'
 
-        #self.soldiers = [soldier for soldier in self.soldiers if soldier.alive]
-        # self.battle_duration += self.t
-        # self.curr = self.curr + self.t
-        #time.sleep(self.t // 2)
+       
         if self.battle_duration % self.t == 0:
             self.print_battlefield_status(self.curr, self.prev_comm, self.new_comm,self.most_recent_missile, missile_impacted_coordinates, missile_radius)
 
