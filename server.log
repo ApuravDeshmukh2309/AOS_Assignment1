@@ -1,33 +1,38 @@
 INFO:root:Server started on port 50051
+INFO:root:Number of Soldiers Alive: 12
 INFO:root:
 Updated Coordinates of Soldiers:
-INFO:root:ID: 0, X: 8, Y: 4, Speed: 4, Commander: True, Alive: True
-INFO:root:ID: 1, X: 7, Y: 0, Speed: 1, Commander: False, Alive: True
-INFO:root:ID: 2, X: 0, Y: 7, Speed: 2, Commander: False, Alive: True
-INFO:root:ID: 3, X: 4, Y: 0, Speed: 0, Commander: False, Alive: True
-INFO:root:ID: 4, X: 6, Y: 5, Speed: 1, Commander: False, Alive: True
-INFO:root:ID: 5, X: 9, Y: 7, Speed: 0, Commander: False, Alive: True
-INFO:root:ID: 6, X: 7, Y: 7, Speed: 4, Commander: False, Alive: True
-INFO:root:ID: 7, X: 1, Y: 6, Speed: 2, Commander: False, Alive: True
-INFO:root:ID: 8, X: 9, Y: 3, Speed: 2, Commander: False, Alive: True
-INFO:root:ID: 9, X: 8, Y: 0, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 0, X: 8, Y: 1, Speed: 4, Commander: True, Alive: True
+INFO:root:ID: 1, X: 6, Y: 7, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 2, X: 9, Y: 7, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 3, X: 8, Y: 9, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 4, X: 1, Y: 4, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 5, X: 1, Y: 8, Speed: 1, Commander: False, Alive: True
+INFO:root:ID: 6, X: 9, Y: 0, Speed: 0, Commander: False, Alive: True
+INFO:root:ID: 7, X: 8, Y: 3, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 8, X: 2, Y: 2, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 9, X: 9, Y: 6, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 10, X: 5, Y: 6, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 11, X: 6, Y: 4, Speed: 1, Commander: False, Alive: True
 INFO:root:
 Battlefield status:
-INFO:root:Battle Duration: 2 seconds
-INFO:root:Soldier ID : 4 SAFE. Moved out of red zone to (5, 4)
-INFO:root:Soldier ID : 6 DEAD
-INFO:root:Missile ID: 0, Target X: 5, Target Y: 7, Radius: 3
+INFO:root:Battle Duration: 5 seconds
+INFO:root:Number of Soldiers Alive: 12
+INFO:root:Missile ID: 0, Target X: 6, Target Y: 0, Radius: 2
 INFO:root:
 Updated Coordinates of Soldiers:
-INFO:root:ID: 0, X: 8, Y: 4, Speed: 4, Commander: True, Alive: True
-INFO:root:ID: 1, X: 7, Y: 0, Speed: 1, Commander: False, Alive: True
-INFO:root:ID: 2, X: 0, Y: 7, Speed: 2, Commander: False, Alive: True
-INFO:root:ID: 3, X: 4, Y: 0, Speed: 0, Commander: False, Alive: True
-INFO:root:ID: 4, X: 5, Y: 4, Speed: 1, Commander: False, Alive: True
-INFO:root:ID: 5, X: 9, Y: 7, Speed: 0, Commander: False, Alive: True
-INFO:root:ID: 7, X: 1, Y: 6, Speed: 2, Commander: False, Alive: True
-INFO:root:ID: 8, X: 9, Y: 3, Speed: 2, Commander: False, Alive: True
-INFO:root:ID: 9, X: 8, Y: 0, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 0, X: 8, Y: 1, Speed: 4, Commander: True, Alive: True
+INFO:root:ID: 1, X: 6, Y: 7, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 2, X: 9, Y: 7, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 3, X: 8, Y: 9, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 4, X: 1, Y: 4, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 5, X: 1, Y: 8, Speed: 1, Commander: False, Alive: True
+INFO:root:ID: 6, X: 9, Y: 0, Speed: 0, Commander: False, Alive: True
+INFO:root:ID: 7, X: 8, Y: 3, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 8, X: 2, Y: 2, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 9, X: 9, Y: 6, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 10, X: 5, Y: 6, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 11, X: 6, Y: 4, Speed: 1, Commander: False, Alive: True
 ERROR:grpc._server:Exception iterating responses: 'NoneType' object is not an iterator
 Traceback (most recent call last):
   File "/Users/apurav/anaconda3/lib/python3.11/site-packages/grpc/_server.py", line 461, in _take_response_from_response_iterator
@@ -36,20 +41,23 @@ Traceback (most recent call last):
 TypeError: 'NoneType' object is not an iterator
 INFO:root:
 Battlefield status:
-INFO:root:Battle Duration: 4 seconds
-INFO:root:Soldier ID : 2 DEAD
-INFO:root:Soldier ID : 7 SAFE. Moved out of red zone to (0, 5)
-INFO:root:Missile ID: 1, Target X: 3, Target Y: 9, Radius: 4
+INFO:root:Battle Duration: 10 seconds
+INFO:root:Number of Soldiers Alive: 12
+INFO:root:Missile ID: 1, Target X: 9, Target Y: 5, Radius: 1
 INFO:root:
 Updated Coordinates of Soldiers:
-INFO:root:ID: 0, X: 8, Y: 4, Speed: 4, Commander: True, Alive: True
-INFO:root:ID: 1, X: 7, Y: 0, Speed: 1, Commander: False, Alive: True
-INFO:root:ID: 3, X: 4, Y: 0, Speed: 0, Commander: False, Alive: True
-INFO:root:ID: 4, X: 5, Y: 4, Speed: 1, Commander: False, Alive: True
-INFO:root:ID: 5, X: 9, Y: 7, Speed: 0, Commander: False, Alive: True
-INFO:root:ID: 7, X: 0, Y: 5, Speed: 2, Commander: False, Alive: True
-INFO:root:ID: 8, X: 9, Y: 3, Speed: 2, Commander: False, Alive: True
-INFO:root:ID: 9, X: 8, Y: 0, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 0, X: 8, Y: 1, Speed: 4, Commander: True, Alive: True
+INFO:root:ID: 1, X: 6, Y: 7, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 2, X: 9, Y: 7, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 3, X: 8, Y: 9, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 4, X: 1, Y: 4, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 5, X: 1, Y: 8, Speed: 1, Commander: False, Alive: True
+INFO:root:ID: 6, X: 9, Y: 0, Speed: 0, Commander: False, Alive: True
+INFO:root:ID: 7, X: 8, Y: 3, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 8, X: 2, Y: 2, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 9, X: 9, Y: 6, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 10, X: 5, Y: 6, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 11, X: 6, Y: 4, Speed: 1, Commander: False, Alive: True
 ERROR:grpc._server:Exception iterating responses: 'NoneType' object is not an iterator
 Traceback (most recent call last):
   File "/Users/apurav/anaconda3/lib/python3.11/site-packages/grpc/_server.py", line 461, in _take_response_from_response_iterator
@@ -58,19 +66,25 @@ Traceback (most recent call last):
 TypeError: 'NoneType' object is not an iterator
 INFO:root:
 Battlefield status:
-INFO:root:Battle Duration: 6 seconds
-INFO:root:Soldier ID : 7 SAFE. Moved out of red zone to (0, 4)
-INFO:root:Missile ID: 2, Target X: 0, Target Y: 6, Radius: 2
+INFO:root:Battle Duration: 15 seconds
+INFO:root:Soldier ID : 1 SAFE. Moved out of red zone to (4, 5)
+INFO:root:Soldier ID : 10 SAFE. Moved out of red zone to (3, 4)
+INFO:root:Number of Soldiers Alive: 12
+INFO:root:Missile ID: 2, Target X: 6, Target Y: 6, Radius: 2
 INFO:root:
 Updated Coordinates of Soldiers:
-INFO:root:ID: 0, X: 8, Y: 4, Speed: 4, Commander: True, Alive: True
-INFO:root:ID: 1, X: 7, Y: 0, Speed: 1, Commander: False, Alive: True
-INFO:root:ID: 3, X: 4, Y: 0, Speed: 0, Commander: False, Alive: True
-INFO:root:ID: 4, X: 5, Y: 4, Speed: 1, Commander: False, Alive: True
-INFO:root:ID: 5, X: 9, Y: 7, Speed: 0, Commander: False, Alive: True
-INFO:root:ID: 7, X: 0, Y: 4, Speed: 2, Commander: False, Alive: True
-INFO:root:ID: 8, X: 9, Y: 3, Speed: 2, Commander: False, Alive: True
-INFO:root:ID: 9, X: 8, Y: 0, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 0, X: 8, Y: 1, Speed: 4, Commander: True, Alive: True
+INFO:root:ID: 1, X: 4, Y: 5, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 2, X: 9, Y: 7, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 3, X: 8, Y: 9, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 4, X: 1, Y: 4, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 5, X: 1, Y: 8, Speed: 1, Commander: False, Alive: True
+INFO:root:ID: 6, X: 9, Y: 0, Speed: 0, Commander: False, Alive: True
+INFO:root:ID: 7, X: 8, Y: 3, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 8, X: 2, Y: 2, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 9, X: 9, Y: 6, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 10, X: 3, Y: 4, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 11, X: 6, Y: 4, Speed: 1, Commander: False, Alive: True
 ERROR:grpc._server:Exception iterating responses: 'NoneType' object is not an iterator
 Traceback (most recent call last):
   File "/Users/apurav/anaconda3/lib/python3.11/site-packages/grpc/_server.py", line 461, in _take_response_from_response_iterator
@@ -78,12 +92,66 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^^
 TypeError: 'NoneType' object is not an iterator
 INFO:root:
+Battlefield status:
+INFO:root:Battle Duration: 20 seconds
+INFO:root:Soldier ID : 2 SAFE. Moved out of red zone to (7, 5)
+INFO:root:Soldier ID : 3 DEAD
+INFO:root:Number of Soldiers Alive: 11
+INFO:root:Missile ID: 3, Target X: 8, Target Y: 9, Radius: 3
+INFO:root:
 Updated Coordinates of Soldiers:
-INFO:root:ID: 0, X: 8, Y: 4, Speed: 4, Commander: True, Alive: True
-INFO:root:ID: 1, X: 7, Y: 0, Speed: 1, Commander: False, Alive: True
-INFO:root:ID: 3, X: 4, Y: 0, Speed: 0, Commander: False, Alive: True
-INFO:root:ID: 4, X: 5, Y: 4, Speed: 1, Commander: False, Alive: True
-INFO:root:ID: 5, X: 9, Y: 7, Speed: 0, Commander: False, Alive: True
-INFO:root:ID: 7, X: 0, Y: 4, Speed: 2, Commander: False, Alive: True
-INFO:root:ID: 8, X: 9, Y: 3, Speed: 2, Commander: False, Alive: True
-INFO:root:ID: 9, X: 8, Y: 0, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 0, X: 8, Y: 1, Speed: 4, Commander: True, Alive: True
+INFO:root:ID: 1, X: 4, Y: 5, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 2, X: 7, Y: 5, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 4, X: 1, Y: 4, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 5, X: 1, Y: 8, Speed: 1, Commander: False, Alive: True
+INFO:root:ID: 6, X: 9, Y: 0, Speed: 0, Commander: False, Alive: True
+INFO:root:ID: 7, X: 8, Y: 3, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 8, X: 2, Y: 2, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 9, X: 9, Y: 6, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 10, X: 3, Y: 4, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 11, X: 6, Y: 4, Speed: 1, Commander: False, Alive: True
+ERROR:grpc._server:Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "/Users/apurav/anaconda3/lib/python3.11/site-packages/grpc/_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not an iterator
+INFO:root:
+Battlefield status:
+INFO:root:Battle Duration: 25 seconds
+INFO:root:Soldier ID : 1 SAFE. Moved out of red zone to (2, 3)
+INFO:root:Soldier ID : 5 DEAD
+INFO:root:Number of Soldiers Alive: 10
+INFO:root:Missile ID: 4, Target X: 3, Target Y: 8, Radius: 4
+INFO:root:
+Updated Coordinates of Soldiers:
+INFO:root:ID: 0, X: 8, Y: 1, Speed: 4, Commander: True, Alive: True
+INFO:root:ID: 1, X: 2, Y: 3, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 2, X: 7, Y: 5, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 4, X: 1, Y: 4, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 6, X: 9, Y: 0, Speed: 0, Commander: False, Alive: True
+INFO:root:ID: 7, X: 8, Y: 3, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 8, X: 2, Y: 2, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 9, X: 9, Y: 6, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 10, X: 3, Y: 4, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 11, X: 6, Y: 4, Speed: 1, Commander: False, Alive: True
+ERROR:grpc._server:Exception iterating responses: 'NoneType' object is not an iterator
+Traceback (most recent call last):
+  File "/Users/apurav/anaconda3/lib/python3.11/site-packages/grpc/_server.py", line 461, in _take_response_from_response_iterator
+    return next(response_iterator), True
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not an iterator
+INFO:root:Number of Soldiers Alive: 10
+INFO:root:
+Updated Coordinates of Soldiers:
+INFO:root:ID: 0, X: 8, Y: 1, Speed: 4, Commander: True, Alive: True
+INFO:root:ID: 1, X: 2, Y: 3, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 2, X: 7, Y: 5, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 4, X: 1, Y: 4, Speed: 3, Commander: False, Alive: True
+INFO:root:ID: 6, X: 9, Y: 0, Speed: 0, Commander: False, Alive: True
+INFO:root:ID: 7, X: 8, Y: 3, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 8, X: 2, Y: 2, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 9, X: 9, Y: 6, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 10, X: 3, Y: 4, Speed: 2, Commander: False, Alive: True
+INFO:root:ID: 11, X: 6, Y: 4, Speed: 1, Commander: False, Alive: True

@@ -191,7 +191,8 @@ class SoldierService(soldier_pb2_grpc.SoldierServiceServicer):
     def print_battlefield_status(self, battle_duration, prev_comm, new_comm, missile=None, missile_impacted_coordinates=None, missile_radius=None):
         
         print("Number of Soldiers Alive:", sum([1 for soldier in self.soldiers if soldier.alive]))
-        info("Number of Soldiers Alive:", sum([1 for soldier in self.soldiers if soldier.alive]))
+        c = sum([1 for soldier in self.soldiers if soldier.alive])
+        info('Number of Soldiers Alive: {}'.format(c) )
 
         # for row in self.field:
         #     print(" ".join(row))
