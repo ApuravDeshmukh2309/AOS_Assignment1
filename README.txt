@@ -28,9 +28,11 @@ Step 3:  python3 -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. sol
 
 Command to run server and client file (NOTE: Please run Server command before running client command ) :
 
-Step 4:  python server.py
+Step 4: Change the address of server in client.py global variable SERVER_ADDRESS as required
 
-Step 5:  python client.py
+Step 5:  python server.py
+
+Step 6:  python client.py
 
 After executing the client.py file it will ask for the inputs from the user , example as shown below :
 
